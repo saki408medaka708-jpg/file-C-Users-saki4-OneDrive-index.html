@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta charset="utf-8" />
+    <title>Cafe Lumière カフェ ルミエール</title>
+    <meta
+      name="description"
+      content="カフェ「カフェ ルミエール」の「Contact」のページです。"/>
+    <meta
+      name="keywords"
+      content="Cafe Lumière,カフェ ルミエール,レシピ,Chipie,福岡,国産小麦,天然酵母,有機栽培,パン,ケーキ,コーヒー"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Reenie+Beanie&display=swap"
+      rel="stylesheet"/>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("input").click(function () {
+          $(this).next(".error").toggleClass("active");
+        });
+      });
+    </script>
+  </head>
+
+  <body id="contact">
+    <header id="page-header">
+      <div class="inner">
+        <a href="../index.html">
+          <h1 class="logo">
+            <span>Cafe Lumière</span>カフェ ルミエール
+          </h1>
+        </a>
+        <div id="nav-toggle" class="sp">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#drink">Drink</a></li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header>
+        <div class="inner">
+          <h1><span>Contact</span>お問い合わせ</h1>
+        </div>
+      </header>
+
+      <div class="inner">
+        <form method="post" action="" enctype="">
+          <dl>
+            <dt><label for="your-name">お名前 ※</label></dt>
+            <dd>
+              <input
+                type="text"
+                name="お名前"
+                id="your-name"
+                placeholder="例：山田花子"
+              />
+              <span class="error">この項目は必ず入力してください。</span>
+            </dd>
+             <dt>性別</dt>
+  <dd>
+   <label for="man">男性</label><input type="radio" name="gender" value="男性" id="man">
+   <label for="woman">女性</label><input type="radio" name="gender" value="女性" id="woman">
+  </dd>
+  <dt>お住まいの地域</dt>
+  <dd class="pref-blk">
+   <select name="pref">
+    <option value="福岡県内">福岡県内</option>
+    <option value=" 九州">九州</option>
+    <option value="九州以外">九州以外</option>
+   </select>
+  </dd>
+            <dt><label for="phone-num">電話番号 ※</label></dt>
+            <dd>
+              <input
+                type="tel"
+                name="電話番号"
+                id="phone-num"
+                placeholder="例：042-000-0000"
+              />
+              <span class="error">この項目は必ず入力してください。</span>
+            </dd>
+            <dt><label for="e-mail">メールアドレス ※</label></dt>
+            <dd>
+              <input
+                type="email"
+                name="メールアドレス"
+                id="e-mail"
+                placeholder="例：shop@le_cafe_des_chats.jp"
+              />
+              <span class="error">この項目は必ず入力してください。</span>
+            </dd>
+            <dt><label for="message">お問い合わせ内容</label></dt>
+            <dd>
+              <textarea
+                name="お問い合わせ内容"
+                id="message"
+                placeholder="お問い合わせ内容をご記入ください。"
+              ></textarea>
+            </dd>
+<dt><label for="agreement">同意事項 ※</label></dt>
+  <dd>
+   <label for="agree">プライバシーポリシーに同意する</label><input
+type="checkbox" name="agree" value="同意事項" id="agree"><br>
+   <a href="#" class="check-policy">プライバシーポリシーのご確認はこちら</a>
+   <span class="error">この項目は必ず選択してください。</span>
+</dd>
+          </dl>
+          <p class="notes"><span>※</span>は必須項目です。</p>
+          <input type="submit" value="送信する" />
+        </form>
+      </div>
+    </main>
+
+<footer>
+ <div class="inner">
+  <div class="footer-blk">
+   <h3>Shop Info</h3>
+   <ul>
+    <li>〒810-0023 福岡県福岡市中央区警固2-00-00</li>
+    <li>月定休 11:00 - 17:00</li>
+   </ul>
+  </div>
+  <div class="footer-blk">
+   <h3>Phone & Mail</h3>
+   <ul>
+    <li><a href="tel:0420000000">092-000-0000</a></li>
+    <li><a href="info@cafe-lumiere.jp">info@cafe-lumiere.jp</a></li>
+   </ul>
+  </div>
+
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#drink">Drink</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="logo"><span>Cafe Lumière</span>カフェ・ルミエール</p>
+
+      <nav class="sns">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="copyright">© 2025 Cafe Lumière. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
