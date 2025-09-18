@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ <meta charset="utf-8">
+ <title>Cafe Lumière カフェ ルミエール</title>
+ <meta name="description" content="忙しい日常の中でほっと一息できる、心と体を休める空間。「Cafe Lumière」のWebサイトです。">
+ <meta name="keywords" content="Cafe Lumière カフェ ルミエール,レシピ,Chipie,福岡,国産小麦,天然酵母,有機栽培,パン,ケーキ,コーヒー">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var $itemBlk = $('.item-blk');  // 対象要素を取得
+    if (!$itemBlk.length) return;   // 存在しなければ終了
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        $itemBlk.each(function() {
+            var $this = $(this);
+            var offsetTop = $this.offset().top;
+            var offsetBottom = offsetTop + $this.outerHeight();
+
+            if(scrollTop + windowHeight > offsetTop && scrollTop < offsetBottom) {
+                $this.addClass('active');
+            } else {
+                $this.removeClass('active');
+            }
+        });
+    });
+});
+</script>
+ <script type="text/javascript">
+　　$(window).load(function() {
+　　　$('a[href^=#]').click(function() {
+　　　　var speed = 1000;
+　　　　var href = $(this).attr("href");
+　　　　var target = $(href == "#" || href == "" ? 'html' : href);
+　　　　var position = target.offset().top;
+　　　　$("html, body").animate({
+　　　　　scrollTop: position
+　　　　}, speed, "swing");
+　　　　return false;
+　　　});
+　　});
+　</script>
+
+ <script type="text/javascript">
+ $(function(){
+  $('#nav-toggle').click(function(){
+   $('body').toggleClass('open');
+  });
+ });
+ </script>
+</head>
+
+<body id="home">
+ <header id="page-header">
+  <div class="inner">
+  <a href="#home"> <h1 class="logo"><span>Cafe Lumière</span></h1>
+</a>
+<div id="nav-toggle" class="sp">
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</div>
+
+   <nav class="header-nav">
+    <ul>
+     <li><a href="#about">About</a></li>
+     <li><a href="#drink">Drink</a></li>
+    </ul>
+    <ul class="sns">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+    </ul>
+   </nav>
+  </div>
+ </header>
+
+ <main>
+  <div id="kv">
+   <div class="inner">
+    <p>
+     静かな時間と<br>
+     香り豊かなコーヒーを楽しめる<br>
+     小さなカフェ。<br>
+     こだわりの豆と手作りスイーツで、<br>
+     日常にやさしいひとときをお届けします。<br>
+    </p>
+   </div>
+  </div>
+
+   <section id="new_arrivals">
+   <h1><span>Our Recommendations</span>おすすめメニュー</h1>
+   <div class="inner">
+    <div class="item-blk">
+     <div class="item">
+      <p class="photo">
+      <img src="./recommend/recommend1.png" alt="ブレンドコーヒー"></p>
+      <h2>ブレンドコーヒー</h2>
+      <p class="text">厳選した豆を丁寧にドリップ。香り高く、やさしい苦味とほどよい酸味が特徴の当店自慢の一杯。</p>
+      <p class="price">400円（＋税）</p>
+     </div>
+     <div class="item">
+      <p class="photo"><img src="./recommend/recommend2.png" alt="季節のフルーツタルト"></p>
+      <h2>季節のフルーツタルト</h2>
+      <p class="text">季節ごとに変わる新鮮なフルーツをたっぷりのせたタルト。彩り豊かで見た目も華やか。</p>
+      <p class="price">700円（＋税）</p>
+     </div>
+     <div class="item">
+      <p class="photo">
+        <img src="./recommend/recommend3.png" alt="カフェラテ アートカップ">
+      </p>
+      <h2>カフェラテ アートカップ</h2>
+      <p class="text">まろやかなスチームミルクと深煎りエスプレッソ。かわいいラテアートで、写真映えも抜群。</p>
+      <p class="price">500円（＋税）</p>
+     </div>
+     <div class="item">
+      <p class="photo"><img src="./recommend/recommend4.jpg" alt="自家製ガトーショコラ"></p>
+      <h2>自家製ガトーショコラ</h2>
+      <p class="text">濃厚でしっとりとした口どけ。コーヒーとの相性がぴったりの定番スイーツ。</p>
+      <p class="price">600円（＋税）</p>
+     </div>
+    </div>
+    <p class="btn"><a href="#">おすすめメニュー</a></p>
+   </div>
+  </section>
+
+  <section id="about">
+   <h1><span>About</span>ル・カフェ・デ・シャについて</h1>
+   <div class="inner">
+    <p class="text">
+    カフェ・ルミエールは、<br>
+    光と緑に包まれた落ち着きのある空間です。<br>
+    ゆっくりと香り高いコーヒーや、<br>
+    季節ごとの手作りスイーツを楽しみながら、<br>
+    日常の喧騒を忘れられるひとときをお過ごしいただけます。<br>
+    国産素材にこだわった焼き菓子や、<br>
+    自家製ブレンドコーヒーなど、<br>
+    体に優しく、心も満たされるメニューをご用意しています。<br>
+    ルミエールで、特別な癒やしの時間をお楽しみください。
+    </p>
+   </div>
+  </section>
+
+  <section id="drink">
+   <h1><span>Drink</span>ドリンクメニュー</h1>
+   <div class="menu">
+    <div class="item-blk">
+     <div class="item">
+      <p class="photo"><img src="./menu/img11.png" alt="カフェラテ"></p>
+      <h2>カフェラテ</h2>
+      <p class="price">400円（＋税）</p>
+     </div>
+     <div class="item">
+      <p class="photo"><img src="./menu/img8.png" alt="ルイボスティー"></p>
+      <h2>ルイボスティー</h2>
+      <p class="price">400円（＋税）</p>
+     </div>
+     <div class="item">
+      <p class="photo"><img src="./menu/img1.png" alt="アイスティー"></p>
+      <h2>アイスティー</h2>
+      <p class="price">400円（＋税）</p>
+     </div>
+     <div class="item">
+      <p class="photo"><img src="./menu/img2.png" alt="レモネード"></p>
+      <h2>レモネード</h2>
+      <p class="price">450円（＋税）</p>
+     </div>
+     <div class="item pc">
+      <p class="photo"><img src="./menu/img3.png" alt="フレッシュレモンジュース"></p>
+      <h2>フレッシュレモンジュース</h2>
+      <p class="price">500円（＋税）</p>
+     </div>
+     <div class="item pc">
+      <p class="photo"><img src="./menu/img4.png" alt="グレープフルーツジュース"></p>
+      <h2>グレープフルーツジュース</h2>
+      <p class="price">500円（＋税）</p>
+     </div>
+    </div>
+     <p class="btn"><a href="drink/index.html">ドリンクメニュー一覧</a></p>
+   </div>
+  </section>
+</main>
+
+<footer>
+ <div class="inner">
+  <div class="footer-blk">
+   <h3>Shop Info</h3>
+   <ul>
+    <li>〒810-0023 福岡県福岡市中央区警固2-00-00</li>
+    <li>月定休 11:00 - 17:00</li>
+   </ul>
+  </div>
+  <div class="footer-blk">
+   <h3>Phone & Mail</h3>
+   <ul>
+    <li><a href="tel:0420000000">092-000-0000</a></li>
+    <li><a href="info@cafe-lumiere.jp">info@cafe-lumiere.jp</a></li>
+   </ul>
+  </div>
+
+  <nav class="footer-nav">
+   <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#drink">Drink</a></li>
+    <li><a href="contact/index.html">Contact</a></li>
+  </ul>
+  </nav>
+ </div>
+
+ <p class="logo"><span>Cafe Lumière</span>カフェ・ルミエール</p>
+
+  <nav class="sns">
+   <ul>
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+   </ul>
+  </nav>
+
+  <p class="copyright">© 2025 Cafe Lumière. All rights reserved.</p>
+ </footer>
+</body>
+
+</html>
